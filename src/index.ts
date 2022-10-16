@@ -1,6 +1,7 @@
 import express from "express";
 import { createProxyMiddleware } from "http-proxy-middleware";
 import path from "path";
+import { createCellRouter } from "./routes/cell";
 
 export const serve = (
   filename: string,
@@ -21,6 +22,8 @@ export const serve = (
     const clientPath = require.resolve("codepunk-client/build/index.html");
     app.use(express.static(path.dirname(clientPath)));
   }
+
+  app.use(createCellRouter(filename, dir));
 
   return new Promise<void>((resolve, reject) => {
     app.listen(port, resolve).on("error", reject);
