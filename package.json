@@ -1,5 +1,5 @@
 {
-  "name": "@codepunk/local-api",
+  "name": "@codepunk_/local-api",
   "version": "1.0.0",
   "description": "local api package for codepunk-cli package",
   "main": "./dist/index.js",
