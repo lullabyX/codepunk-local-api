@@ -21,7 +21,7 @@ export const serve = (
       })
     );
   } else {
-    const clientPath = require.resolve("@codepunk/client/build/index.html");
+    const clientPath = require.resolve("@codepunk_/client/build/index.html");
     app.use(express.static(path.dirname(clientPath)));
   }
 
