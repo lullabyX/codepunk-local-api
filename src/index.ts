@@ -16,7 +16,8 @@ export const serve = (
   if (useProxy) {
     app.use(
       createProxyMiddleware({
-        target: `http://localhost:3000`,
+        target: 'http://localhost:3000',
+        ws: true,
         logLevel: "silent",
       })
     );

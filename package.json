@@ -1,6 +1,6 @@
 {
   "name": "@codepunk_/local-api",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "local api package for codepunk-cli package",
   "main": "./dist/index.js",
   "files": [
@@ -21,10 +21,10 @@
     "@types/http-proxy-middleware": "^1.0.0"
   },
   "dependencies": {
-    "@codepunk_/client": "^1.0.0",
+    "@codepunk_/client": "^1.0.3",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6"
   },
-  "gitHead": "4eb419c98c0570a59f17f3d196e367a62064c99d"
+  "gitHead": "37a5ad73bd17f5b1a7ecee79caad150f4b286f74"
 }
